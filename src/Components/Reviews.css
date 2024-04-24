@@ -1,0 +1,75 @@
+.review-container {
+    position: sticky;
+    border: 1px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    top: 58.5%;
+    transform: translateY(-50%);
+    padding: 20px;
+    width: 48.2%;
+    max-height: 140px; /* Set a maximum height for scrollability */
+    overflow-y: auto; /* Vertical scrolling */
+}
+.review-container h3 {
+    margin-top: -5px;
+}
+.add-review {
+    margin-left: 88%;
+}
+.add-review button{
+    margin-top: -26px;
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+}
+.add-review button:hover{
+    background: rgb(163, 163, 163);
+}
+
+.review {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.review h4{
+    margin-left: 6%;
+}
+
+.user-review-btns a{
+    margin-left: 80px;
+    padding-right: 10px;
+}
+.user-review-btns button{
+    margin-left: 0px;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+}
+.user-review-btns button:hover{
+    background: rgb(163, 163, 163);
+}
+
+.home {
+    position: absolute;
+    z-index: 1;
+    margin-top: 66%;
+    margin-left: 90%;
+}
+
+.home button {
+    height: 50px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+}
+
+.home button:hover {
+    background: rgb(163, 163, 163);
+}

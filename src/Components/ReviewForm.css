@@ -1,0 +1,45 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 30px 0px 30px 0px;
+    margin: 250px 20% 20% 20%;
+}
+.form h1 {
+    position: absolute;
+    margin-top: -320px;
+    font-size: 70px;
+    font-weight:100;
+}
+
+.form form {
+    margin-left: 30px;
+    display: flex;
+    gap: 70px;
+    height: 50px;
+    /* width: 200px; */
+}
+.form form input{
+    margin-left: -90px;
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+}
+.form form button {
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+}
+.form a button{
+    margin-left: 50px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+}

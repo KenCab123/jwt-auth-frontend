@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Navbar.css"
 
 import { Link } from "react-router-dom";
 
@@ -21,34 +22,42 @@ const NavBar = ({ toggleLogin, handleLogout }) => {
           .then((response) => response.json())
           .then((data) => {
             setUser(data.user);
+            console.log(data.user);
+            console.log(toggleLogin);
+            
           })
           .catch((error) => console.error("Error fetching user:", error));
       }
     }
-  }, [toggleLogin]);
+  }, []);
+
+  
 
   return (
     <div className="navbar-container">
-      <h1>Navbar Component</h1>
-      <h2>
-        <Link style={{ textDecoration: "none" }} to="/">
-          Your image or Logo (click here to go to Landing Page)
+        <Link className="logo" to="/">
+          <h1>SoundQuiz</h1>
         </Link>
-      </h2>
 
-      {!toggleLogin ? (
-        <Link to={"/login"}>
-          <span>Login</span>
-        </Link>
-      ) : (
-        <div>
-          {user && <span>Hello, {user.username.toUpperCase()}? | </span>}
-          <Link onClick={handleLogout}>
-            <span>Logout</span>
-          </Link>
-        </div>
-      )}
-      <hr />
+        <ul className="navbar-ul">
+            <li>
+              <Link to={"/about"}>
+                <span>About</span>
+              </Link>
+            </li>
+            <li>
+            {toggleLogin ? (
+              <Link onClick={handleLogout}>
+                  <span>Logout</span>
+                </Link>
+            ) : (
+                <Link to={"/"}>
+                  <span>Login</span>
+                </Link>
+            )}
+            </li>
+        </ul>
+
     </div>
   );
 };

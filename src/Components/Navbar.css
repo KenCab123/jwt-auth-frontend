@@ -1,0 +1,29 @@
+
+.navbar-container {
+    background: rgb(51, 119, 215);
+    gap: 77%;
+}
+
+.navbar-container, .navbar-ul, .navbar-ul li {
+    display: flex;
+}
+
+.navbar-ul {
+    gap: 30px;
+    margin: 18px 0px 0px -10px;
+    font-size: 15px;
+}
+
+.navbar-ul a, .logo{
+    color: white;
+}
+
+.navbar-ul li, .navbar-ul a, .logo {
+    text-decoration: none;
+}
+
+.logo h1{
+    font-size: 34px;
+    font-weight: lighter;
+    padding: 5px 20px 5px 15px;
+}

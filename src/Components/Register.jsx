@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import "./Register.css"
 
 const URL = import.meta.env.VITE_BASE_URL;
 
@@ -45,7 +46,7 @@ const Register = ({ setToggleLogin }) => {
   // USE THIS FORM TO BUILD OUT YOUR FORM PROPERLY BY ADDING LABELS AND INPUTS AS WELL AS WHATEVER CSS FRAMEWORK YOU MAY USE OR VANILLA CSS. THIS IS JUST A BOILERPLATE CODE
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="register">
       <p>
         Already have an account? <Link to="/login">Login</Link>
       </p>

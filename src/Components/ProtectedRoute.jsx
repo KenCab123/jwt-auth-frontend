@@ -56,7 +56,7 @@ const ProtectedRoute = () => {
 
   if (!isAuthenticated) {
     // Redirect them to the /login page, but save the current location they were
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return <Outlet context={user} />; // If authenticated, continue rendering the component the route is pointing to

@@ -1,0 +1,112 @@
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+.question {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.questions h1{
+    padding:20px;
+    margin-left: -400px;
+    margin-top: 40px;
+}
+.questions h2{
+    padding-bottom:20px;
+    /* margin-left: 100px; */
+    margin-top: 20px;
+}
+
+.play-sound {
+    display: block;
+    margin-left: 400px;
+    margin-top: -50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}   
+
+.play-sound:hover {
+    background: rgb(163, 163, 163);
+}
+
+.questions-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* justify-content: center; */
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    width: 100px;
+}
+.questions-options button{
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+}
+.questions-options button:hover {
+    background: rgb(163, 163, 163);
+}
+
+.quiz-btns {
+    display: flex;
+    gap: 20px;
+    margin-left: -30px;
+    margin-top: -40px;
+    padding-bottom: 50px;
+    /* padding-top: 10px; */
+}
+.quiz-btns button{
+    padding: 10px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: none;
+}
+.quiz-btns button:hover {
+    background: rgb(163, 163, 163);
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    border: 20px solid rgb(51, 119, 215);
+    padding: 24px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.modal-content button {
+    height: 50px;
+    width: 70%;
+    margin-left: 70px;
+}
